@@ -22,7 +22,7 @@ function comcastIsDead {
 
 if [ $(comcastIsDead) -gt 0 ]; then
 	echo "Everything seems fine to me.  Internet is working!"
-	#exit
+	exit
 fi
 
 printf "Preferred method(s) of contact (any of [email,phone,sms,fax]): "
